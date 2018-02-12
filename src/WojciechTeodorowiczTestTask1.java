@@ -8,18 +8,8 @@ import java.util.stream.Stream;
 
 public class WojciechTeodorowiczTestTask1 {
     ArrayList<Period> discountPeriods;
-    ArrayList<Period> discountPeriods1;
-    ArrayList<Period> discountPeriods2;
-    ArrayList<Period> discountPeriods3;
-
     ArrayList<Period> normalPeriods;
-    ArrayList<Period> normalPeriods1;
-    ArrayList<Period> normalPeriods2;
-    ArrayList<Period> normalPeriods3;
-
-    BigDecimal b;
-
-
+    BigDecimal BigDec;
     @Before
     public void instantiatePeriods() {
         discountPeriods = new ArrayList<>();
@@ -28,22 +18,7 @@ public class WojciechTeodorowiczTestTask1 {
         normalPeriods.add(new Period(2,5));
         normalPeriods.add(new Period(17,20));
 
-        // Discount periods 2-4 18-19
-        discountPeriods1 = new ArrayList<Period>() {{ add(new Period(2,4)); add(new Period(18,19)); }};
-        // Normal periods 0-2 13-17
-        normalPeriods1 = new ArrayList<Period>() {{ add(new Period(0,2)); add(new Period(13,17)); add(new Period(23,24)); }};
-
-        // Discount periods 0-4 23-24
-        discountPeriods2 = new ArrayList<Period>() {{ add(new Period(0,4)); add(new Period(23,24)); }};
-        // Normal periods 6-23
-        normalPeriods2 = new ArrayList<Period>() {{ add(new Period(6,23)); }};
-
-        // Discount periods 0-2 13-17 and 23-24
-        discountPeriods3 = new ArrayList<Period>() {{ add(new Period(0,2)); add(new Period(13,17)); add(new Period(23,24)); }};
-        // Normal periods 2-4 5-12 17 - 19
-        normalPeriods3 = new ArrayList<Period>() {{ add(new Period(2,4)); add(new Period(5,12)); add(new Period(17,19)); }};
-
-        b = null;
+        BigDec = null;
     }
 
 
